@@ -1,0 +1,888 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #efefed;
+  color: #302b26;
+  font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.page {
+  width: 1300px;
+  min-height: 880px;
+  margin: 40px auto;
+  display: flex;
+
+  background: #f8f5ef;
+
+  box-shadow:
+    0 20px 40px rgba(50, 40, 30, 0.18);
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  width: 235px;
+  flex-shrink: 0;
+
+  padding: 30px 15px;
+
+  background: #f8f5ef;
+
+  border-right: 1px solid #e5dfd5;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* LOGO */
+
+.logo {
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 12px;
+
+  border-bottom: 1px solid #e5dfd5;
+}
+
+.sun {
+  color: #e5a43d;
+  font-size: 29px;
+}
+
+.logo span {
+  display: block;
+
+  color: #a35d44;
+
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.logo strong {
+  display: block;
+
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+  margin-top: 15px;
+}
+
+.nav-link {
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0 12px;
+
+  color: #656058;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+}
+
+.nav-link i {
+  font-size: 15px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: white;
+
+  color: #302b26;
+}
+
+.nav-link small {
+  width: 16px;
+  height: 16px;
+
+  margin-left: auto;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: white;
+  background: #b44924;
+
+  font-size: 9px;
+}
+
+
+/* =========================
+   WEATHER
+========================= */
+
+.weather {
+  position: relative;
+
+  overflow: hidden;
+
+  margin-top: auto;
+
+  padding: 14px;
+
+  height: 94px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f9e5a0,
+      #f4ce58
+    );
+}
+
+.weather-circle {
+  position: absolute;
+
+  width: 62px;
+  height: 62px;
+
+  right: -8px;
+  top: -17px;
+
+  border-radius: 50%;
+
+  background: #f0b936;
+}
+
+.weather p {
+  position: relative;
+
+  margin: 0;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.weather h2 {
+  position: relative;
+
+  margin: 3px 0 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.weather span {
+  position: relative;
+
+  font-size: 10px;
+}
+
+
+/* SIDEBAR FOOTER */
+
+.sidebar-footer {
+  padding: 14px 12px 0;
+
+  color: #8d867c;
+
+  border-top: 1px dashed #ddd6cc;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 8px;
+
+  line-height: 1.6;
+}
+
+.sidebar-footer p {
+  margin: 0 0 8px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+  flex: 1;
+
+  padding: 30px 38px;
+
+  overflow: hidden;
+}
+
+
+/* HEADER */
+
+.top-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+
+  color: #958d83;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 38px;
+
+  font-weight: normal;
+
+  letter-spacing: -1.5px;
+}
+
+h1 em {
+  color: #a84827;
+}
+
+
+/* HEADER BUTTONS */
+
+.header-buttons {
+  display: flex;
+
+  gap: 10px;
+}
+
+.outline-btn,
+.dark-btn {
+  padding: 9px 16px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.outline-btn {
+  border: 1px solid #ded7cd;
+
+  background: rgba(255,255,255,.4);
+
+  color: #3d3731;
+}
+
+.dark-btn {
+  border: 1px solid #292622;
+
+  background: #292622;
+
+  color: white;
+}
+
+
+/* =========================
+   BOOKING AREA
+========================= */
+
+.booking-area {
+  position: relative;
+
+  height: 420px;
+}
+
+
+/* =========================
+   RECEIPT
+========================= */
+
+.receipt {
+  position: absolute;
+
+  left: 12%;
+
+  top: 0;
+
+  width: 52%;
+
+  min-height: 370px;
+
+  padding: 24px 28px;
+
+  background: #fffdf9;
+
+  border: 1px solid #eee8df;
+
+  border-radius: 14px;
+
+  transform: rotate(-2deg);
+
+  box-shadow:
+    0 20px 30px rgba(65, 50, 35, .13);
+
+  z-index: 2;
+}
+
+.receipt-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  color: #8d867d;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+.receipt-header span:last-child {
+  text-align: right;
+}
+
+.receipt h2 {
+  margin: 10px 0 20px;
+
+  font-family: Georgia, serif;
+
+  font-size: 20px;
+
+  font-weight: normal;
+}
+
+
+/* DATES */
+
+.dates label {
+  color: #918980;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+.dates h3 {
+  margin: 2px 0 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 29px;
+
+  font-weight: normal;
+}
+
+.dates span {
+  color: #7f786f;
+
+  font-size: 9px;
+}
+
+
+/* RECEIPT ITEMS */
+
+.receipt-items {
+  margin-top: 28px;
+
+  padding-bottom: 13px;
+}
+
+.receipt-items div {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  font-size: 10px;
+}
+
+.receipt-items strong {
+  font-weight: 500;
+}
+
+
+/* TOTAL */
+
+.total {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 12px 0;
+
+  border-top: 1px solid #bbb3a9;
+  border-bottom: 1px solid #e1dbd1;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+.total strong {
+  font-family: Georgia, serif;
+
+  font-size: 25px;
+
+  font-weight: normal;
+
+  letter-spacing: 0;
+}
+
+
+/* RECEIPT FOOTER */
+
+.receipt-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: end;
+
+  margin-top: 15px;
+
+  color: #8d867d;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 8px;
+}
+
+.barcode {
+  width: 75px;
+  height: 26px;
+
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #28231e 0px,
+      #28231e 2px,
+      transparent 2px,
+      transparent 4px,
+      #28231e 4px,
+      #28231e 5px,
+      transparent 5px,
+      transparent 7px
+    );
+}
+
+
+/* =========================
+   HOST CARD
+========================= */
+
+.host-card {
+  position: absolute;
+
+  right: 5%;
+
+  top: -4px;
+
+  width: 48%;
+
+  min-height: 370px;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #d45d28,
+      #a53d1d
+    );
+
+  color: white;
+
+  transform: rotate(3deg);
+
+  box-shadow:
+    0 25px 35px rgba(135, 57, 28, .25);
+
+  z-index: 3;
+}
+
+.host-sun {
+  position: absolute;
+
+  right: 25px;
+  top: 20px;
+
+  color: #f6d259;
+
+  font-size: 31px;
+}
+
+.welcome {
+  margin: 0 0 72px;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+.host-card h2 {
+  margin: 0 0 20px;
+
+  font-family: Georgia, serif;
+
+  font-size: 24px;
+
+  font-weight: normal;
+
+  line-height: 1.1;
+}
+
+.host-card h2 em {
+  font-size: 31px;
+}
+
+.host-text {
+  max-width: 285px;
+
+  margin: 0;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+.room {
+  position: absolute;
+
+  bottom: 25px;
+  left: 25px;
+}
+
+.room small {
+  display: block;
+
+  margin-bottom: 3px;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 8px;
+
+  opacity: .7;
+}
+
+.room strong {
+  font-family: Georgia, serif;
+
+  font-size: 15px;
+
+  font-weight: normal;
+}
+
+
+/* HOVER EFFECT */
+
+.booking-area:hover .receipt {
+  transform:
+    translateX(-10px)
+    rotate(-4deg);
+}
+
+.booking-area:hover .host-card {
+  transform:
+    translateX(10px)
+    rotate(5deg);
+}
+
+
+/* HOVER TEXT */
+
+.fan {
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  color: #91897f;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   INFO CARDS
+========================= */
+
+.info-section {
+  margin-top: 0;
+}
+
+.info-card {
+  min-height: 225px;
+
+  padding: 19px 17px;
+
+  border: 1px solid #e2dcd3;
+
+  border-radius: 13px;
+
+  background: rgba(255,255,255,.42);
+
+  box-shadow:
+    0 4px 10px rgba(70,50,30,.03);
+}
+
+.info-top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 7px;
+}
+
+.info-top > span {
+  color: #a06a54;
+
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 8px;
+
+  color: white;
+
+  font-size: 17px;
+}
+
+.orange {
+  background: #b64a24;
+}
+
+.blue {
+  background: #5b6fc0;
+}
+
+.pink {
+  background: #b74568;
+}
+
+.card-label {
+  margin: 0 0 30px;
+
+  color: #a2634e;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+}
+
+.blue-text {
+  color: #6575ae;
+}
+
+.pink-text {
+  color: #ad6680;
+}
+
+.info-card h2 {
+  margin: 0 0 6px;
+
+  font-family: Georgia, serif;
+
+  font-size: 19px;
+
+  font-weight: normal;
+}
+
+.info-card > small {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #8d857b;
+
+  font-size: 9px;
+}
+
+.info-card > p:last-child {
+  margin: 0;
+
+  color: #716a62;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   WIFI
+========================= */
+
+.wifi-box {
+  margin-top: 18px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  background: #f0eee9;
+}
+
+.wifi-box div {
+  display: flex;
+
+  align-items: center;
+
+  padding: 9px 10px;
+
+  gap: 10px;
+}
+
+.wifi-box div + div {
+  border-top: 1px solid #dfd9d0;
+}
+
+.wifi-box span {
+  width: 65px;
+
+  color: #938c83;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 7px;
+
+  letter-spacing: 1px;
+}
+
+.wifi-box strong {
+  margin-left: auto;
+
+  font-size: 9px;
+
+  font-weight: 500;
+}
+
+.wifi-box button {
+  padding: 0;
+
+  border: 0;
+
+  background: none;
+
+  color: #69625a;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 7px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.attribution {
+  margin-top: 22px;
+
+  text-align: center;
+
+  color: #aaa299;
+
+  font-size: 9px;
+}
+
+.attribution a {
+  color: #9b4e36;
+  text-decoration: none;
+}
+
+
+/* =========================
+   DESKTOP ONLY
+========================= */
+
+@media (max-width: 1350px) {
+
+  .page {
+    width: 95%;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .page {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    padding: 30px;
+  }
+
+}
