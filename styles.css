@@ -19,13 +19,8 @@ body {
 ========================= */
 
 .page {
-  width: 1300px;
   min-height: 880px;
-  margin: 40px auto;
-  display: flex;
-
   background: #f8f5ef;
-
   box-shadow:
     0 20px 40px rgba(50, 40, 30, 0.18);
 }
@@ -36,31 +31,17 @@ body {
 ========================= */
 
 .sidebar {
-  width: 235px;
-  flex-shrink: 0;
-
   padding: 30px 15px;
 
   background: #f8f5ef;
 
   border-right: 1px solid #e5dfd5;
-
-  display: flex;
-  flex-direction: column;
 }
 
 
 /* LOGO */
 
 .logo {
-  height: 70px;
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  padding: 0 12px;
-
   border-bottom: 1px solid #e5dfd5;
 }
 
@@ -95,9 +76,6 @@ body {
 
 .nav-link {
   height: 38px;
-
-  display: flex;
-  align-items: center;
 
   gap: 12px;
 
@@ -146,37 +124,19 @@ body {
 ========================= */
 
 .weather {
-  position: relative;
-
-  overflow: hidden;
-
-  margin-top: auto;
-
-  padding: 14px;
-
-  height: 94px;
-
-  border-radius: 12px;
-
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       #f9e5a0,
-      #f4ce58
-    );
+      #f4ce58);
 }
 
 .weather-circle {
   position: absolute;
-
   width: 62px;
   height: 62px;
-
   right: -8px;
   top: -17px;
-
   border-radius: 50%;
-
   background: #f0b936;
 }
 
@@ -212,11 +172,8 @@ body {
 /* SIDEBAR FOOTER */
 
 .sidebar-footer {
-  padding: 14px 12px 0;
 
   color: #8d867c;
-
-  border-top: 1px dashed #ddd6cc;
 
   font-family: "DM Mono", monospace;
 
@@ -225,18 +182,12 @@ body {
   line-height: 1.6;
 }
 
-.sidebar-footer p {
-  margin: 0 0 8px;
-}
-
 
 /* =========================
    MAIN
 ========================= */
 
 .main {
-  flex: 1;
-
   padding: 30px 38px;
 
   overflow: hidden;
@@ -246,11 +197,6 @@ body {
 /* HEADER */
 
 .top-header {
-  display: flex;
-
-  justify-content: space-between;
-  align-items: flex-start;
-
   margin-bottom: 40px;
 }
 
@@ -285,11 +231,7 @@ h1 em {
 
 /* HEADER BUTTONS */
 
-.header-buttons {
-  display: flex;
-
-  gap: 10px;
-}
+.header-buttons {}
 
 .outline-btn,
 .dark-btn {
@@ -305,7 +247,7 @@ h1 em {
 .outline-btn {
   border: 1px solid #ded7cd;
 
-  background: rgba(255,255,255,.4);
+  background: rgba(255, 255, 255, .4);
 
   color: #3d3731;
 }
@@ -335,13 +277,6 @@ h1 em {
 ========================= */
 
 .receipt {
-  position: absolute;
-
-  left: 12%;
-
-  top: 0;
-
-  width: 52%;
 
   min-height: 370px;
 
@@ -362,9 +297,6 @@ h1 em {
 }
 
 .receipt-header {
-  display: flex;
-
-  justify-content: space-between;
 
   color: #8d867d;
 
@@ -428,9 +360,6 @@ h1 em {
 }
 
 .receipt-items div {
-  display: flex;
-
-  justify-content: space-between;
 
   margin-bottom: 8px;
 
@@ -445,12 +374,6 @@ h1 em {
 /* TOTAL */
 
 .total {
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
   padding: 12px 0;
 
   border-top: 1px solid #bbb3a9;
@@ -477,12 +400,6 @@ h1 em {
 /* RECEIPT FOOTER */
 
 .receipt-footer {
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: end;
-
   margin-top: 15px;
 
   color: #8d867d;
@@ -497,8 +414,7 @@ h1 em {
   height: 26px;
 
   background:
-    repeating-linear-gradient(
-      90deg,
+    repeating-linear-gradient(90deg,
       #28231e 0px,
       #28231e 2px,
       transparent 2px,
@@ -506,8 +422,7 @@ h1 em {
       #28231e 4px,
       #28231e 5px,
       transparent 5px,
-      transparent 7px
-    );
+      transparent 7px);
 }
 
 
@@ -516,14 +431,6 @@ h1 em {
 ========================= */
 
 .host-card {
-  position: absolute;
-
-  right: 5%;
-
-  top: -4px;
-
-  width: 48%;
-
   min-height: 370px;
 
   padding: 25px;
@@ -531,11 +438,9 @@ h1 em {
   border-radius: 15px;
 
   background:
-    linear-gradient(
-      145deg,
+    linear-gradient(145deg,
       #d45d28,
-      #a53d1d
-    );
+      #a53d1d);
 
   color: white;
 
@@ -626,14 +531,12 @@ h1 em {
 
 .booking-area:hover .receipt {
   transform:
-    translateX(-10px)
-    rotate(-4deg);
+    translateX(-10px) rotate(-4deg);
 }
 
 .booking-area:hover .host-card {
   transform:
-    translateX(10px)
-    rotate(5deg);
+    translateX(10px) rotate(5deg);
 }
 
 
@@ -674,22 +577,15 @@ h1 em {
 
   border-radius: 13px;
 
-  background: rgba(255,255,255,.42);
+  background: rgba(255, 255, 255, .42);
 
   box-shadow:
-    0 4px 10px rgba(70,50,30,.03);
+    0 4px 10px rgba(70, 50, 30, .03);
 }
 
-.info-top {
-  display: flex;
 
-  justify-content: space-between;
-  align-items: center;
 
-  margin-bottom: 7px;
-}
-
-.info-top > span {
+.info-top>span {
   color: #a06a54;
 
   font-family: Georgia, serif;
@@ -698,16 +594,7 @@ h1 em {
 }
 
 .icon {
-  width: 36px;
-  height: 36px;
-
-  display: grid;
-  place-items: center;
-
-  border-radius: 8px;
-
   color: white;
-
   font-size: 17px;
 }
 
@@ -753,7 +640,7 @@ h1 em {
   font-weight: normal;
 }
 
-.info-card > small {
+.info-card>small {
   display: block;
 
   margin-bottom: 15px;
@@ -763,7 +650,7 @@ h1 em {
   font-size: 9px;
 }
 
-.info-card > p:last-child {
+.info-card>p:last-child {
   margin: 0;
 
   color: #716a62;
@@ -779,26 +666,15 @@ h1 em {
 ========================= */
 
 .wifi-box {
-  margin-top: 18px;
-
-  overflow: hidden;
-
-  border-radius: 8px;
-
   background: #f0eee9;
 }
 
 .wifi-box div {
-  display: flex;
-
-  align-items: center;
-
   padding: 9px 10px;
 
-  gap: 10px;
 }
 
-.wifi-box div + div {
+.wifi-box div+div {
   border-top: 1px solid #dfd9d0;
 }
 
@@ -877,12 +753,32 @@ h1 em {
     margin: 0;
   }
 
-  .sidebar {
-    display: none;
-  }
+  .sidebar {}
 
   .main {
-    padding: 30px;
+    padding: 24px 16px;
   }
 
+}
+
+@media (max-width: 700px) {
+  .booking-area {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .receipt,
+  .host-card {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    min-height: 370px;
+    transform: none;
+  }
+
+  .fan {
+    display: none;
+  }
 }
